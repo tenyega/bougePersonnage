@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnage</title>
+    <link rel="stylesheet" type="text/css" href="personnage.css" />
+    <link rel="stylesheet" type="text/css" href="horloge.css" />
+
+</head>
+
+<body>
+
+    <div id="fontDefile">
+        <div>
+            <img src="nordSee.jpg" alt="" />
+            <img src="nordSee.jpg" alt="" />
+            <img src="nordSee.jpg" alt="" />
+        </div>
+    </div>
+
+    <section id="horlogeDroite">14:06:58</section>
+
+    <!-- position : face, dos, gauche et droite -->
+    <!-- <div id='perso' class='position_dos_1'></div>
+    <div id='perso' class='position_dos_2'></div>
+    <div id='perso' class='position_dos_3'></div>
+    <div id='perso' class='position_dos_4'></div>
+    <div id='perso' class='position_dos_5'></div>
+    <div id='perso' class='position_dos_6'></div>
+    <div id='perso' class='position_dos_7'></div>
+    <div id='perso' class='position_dos_8'></div>
+    <div id='perso' class='position_dos_9'></div>
+    <div id='perso' class='position_dos_10'></div>
+    <div id='perso' class='position_dos_11'></div>
+    <div id='perso' class='position_dos_12'></div> -->
+
+
+    <input type='button' value='start' onclick="playPer()" />
+    <input type='button' value='stop' onclick="stopPer()" /><br>
+
+
+    <div id='perso' data-imagecle='0'></div>
+
+    <!-- <div id='perso'></div> -->
+
+
+    <input type='number' value='1' onchange='afficheBH(this.value)' />
+    <!-- style="position: absolute; top:184px; left:8px;" /> -->
+
+    <script src='personnage.js'></script>
+    <script src='horloge.js'></script>
+
+</body>
+
+</html>

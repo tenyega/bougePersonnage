@@ -1,0 +1,41 @@
+/*---------------------------------- hour*/
+
+#horlogeDroite {
+    margin-top: 30px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #FFF;
+    float: right;
+    padding: 4px 3px 2px 5px;
+    font-size: .8em;
+    background-color: #333;
+    box-shadow: 1px 1px 2px #000;
+    /* animation: tictac 2s infinite ease-in-out; */
+    animation-name: tictac;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    z-index: 30;
+}
+
+
+/* Le pourcentage indique le temps : 2s = 100% */
+
+@keyframes tictac {
+    0%,
+    100% {
+        background-color: #333;
+        transform: rotate(-5deg);
+        margin-right: 13px;
+    }
+    50% {
+        transform: rotate(5deg);
+        margin-right: 20px;
+        background-color: #833;
+    }
+    /* 100% {
+        background-color: #333;
+        transform: rotate(-5deg);
+        margin-right: 13px;
+    } */
+}

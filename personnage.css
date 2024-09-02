@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#fontDefile {
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #000;
+    width: 650px;
+}
+
+
+/* In this the div is given display flex so that three background image make side to side and an animation is done */
+
+
+/*The  animation is done to get the background in continous way. background repeat cant be done coz image doesnt links well when the backgroun repeat is done*/
+
+#fontDefile>div {
+    display: flex;
+    width: 2000px;
+    position: relative;
+    left: 0px;
+    /* -1300px */
+    animation-name: defileBG;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* in this animation that runs in 20s  and at 0s the left will be at 0px and at 20s the left will be at -1300px (the value of the end of image) */
+
+@keyframes defileBG {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1300px;
+    }
+}
+
+#fontDefile img {
+    width: 650px;
+    height: auto;
+}
+
+
+/*This translate  is done one the scale X to change the image's front to end and end to front so that we can have that continous image look to our background*/
+
+#fontDefile img:nth-child(2) {
+    transform: scaleX(-1);
+}
+
+
+/*---------------------------------- PERSO */
+
+#perso {
+    position: absolute;
+    /* top: 25px; */
+    top: 500px;
+    left: 50px;
+    margin: 2px;
+    display: inline-block;
+    /* border: 1px #000 solid; */
+    /* need to remove this */
+    background-image: url(personnage.png);
+    width: 95px;
+    height: 160px;
+    /* 1142 / 635 */
+}
+
+#perso::before {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    content: attr(data-imagecle);
+    background-color: #800;
+    color: #fff;
+    left: -10px;
+    padding: 3px;
+    border-radius: 50%;
+    min-width: 10px;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------Face */
+
+#perso.position_face_1 {
+    background-position: 0px 0px;
+}
+
+#perso.position_face_2 {
+    background-position: -95px 0px;
+}
+
+#perso.position_face_3 {
+    background-position: -191px 0px;
+}
+
+#perso.position_face_4 {
+    background-position: -286px 0px;
+}
+
+#perso.position_face_5 {
+    background-position: -382px 0px;
+}
+
+#perso.position_face_6 {
+    background-position: -477px 0px;
+}
+
+#perso.position_face_7 {
+    background-position: -574px 0px;
+}
+
+#perso.position_face_8 {
+    background-position: -668px 0px;
+}
+
+#perso.position_face_9 {
+    background-position: -764px 0px;
+}
+
+#perso.position_face_10 {
+    background-position: -859px 0px;
+}
+
+#perso.position_face_11 {
+    background-position: -955px 0px;
+}
+
+#perso.position_face_12 {
+    background-position: -1050px 0px;
+}
+
+
+/*----------------------------------------------------  Gauche */
+
+#perso.position_gauche_1 {
+    background-position: 0px -158px;
+}
+
+#perso.position_gauche_2 {
+    background-position: -93px -156px;
+}
+
+#perso.position_gauche_3 {
+    background-position: -189px -156px;
+}
+
+#perso.position_gauche_4 {
+    background-position: -284px -153px;
+}
+
+#perso.position_gauche_5 {
+    background-position: -380px -153px;
+}
+
+#perso.position_gauche_6 {
+    background-position: -475px -153px;
+}
+
+#perso.position_gauche_7 {
+    background-position: -570px -153px;
+}
+
+#perso.position_gauche_8 {
+    background-position: -665px -153px;
+}
+
+#perso.position_gauche_9 {
+    background-position: -761px -155px;
+}
+
+#perso.position_gauche_10 {
+    background-position: -856px -155px;
+}
+
+#perso.position_gauche_11 {
+    background-position: -952px -155px;
+}
+
+#perso.position_gauche_12 {
+    background-position: -1047px -154px;
+}
+
+
+/*---------------------------------------------------- Droite */
+
+#perso.position_droite_1 {
+    background-position: 0px -320px
+}
+
+#perso.position_droite_2 {
+    background-position: -96px -320px;
+}
+
+#perso.position_droite_3 {
+    background-position: -191px -320px;
+}
+
+#perso.position_droite_4 {
+    background-position: -288px -317px;
+}
+
+#perso.position_droite_5 {
+    background-position: -383px -318px;
+}
+
+#perso.position_droite_6 {
+    background-position: -479px -318px;
+}
+
+#perso.position_droite_7 {
+    background-position: -575px -319px;
+}
+
+#perso.position_droite_8 {
+    background-position: -670px -319px;
+}
+
+#perso.position_droite_9 {
+    background-position: -766px -319px;
+}
+
+#perso.position_droite_10 {
+    background-position: -862px -318px;
+}
+
+#perso.position_droite_11 {
+    background-position: -958px -318px;
+}
+
+#perso.position_droite_12 {
+    background-position: -1053px -318px;
+}
+
+
+/*---------------------------------------------------- Dos */
+
+#perso.position_dos_1 {
+    background-position: 0px -480px;
+}
+
+#perso.position_dos_2 {
+    background-position: -95px -480px;
+}
+
+#perso.position_dos_3 {
+    background-position: -190px -481px;
+}
+
+#perso.position_dos_4 {
+    background-position: -286px -481px;
+}
+
+#perso.position_dos_5 {
+    background-position: -381px -481px;
+}
+
+#perso.position_dos_6 {
+    background-position: -477px -481px;
+}
+
+#perso.position_dos_7 {
+    background-position: -573px -481px;
+}
+
+#perso.position_dos_8 {
+    background-position: -667px -481px;
+}
+
+#perso.position_dos_9 {
+    background-position: -764px -481px;
+}
+
+#perso.position_dos_10 {
+    background-position: -859px -481px;
+}
+
+#perso.position_dos_11 {
+    background-position: -955px -481px;
+}
+
+#perso.position_dos_12 {
+    background-position: -1050px -481px;
+}
